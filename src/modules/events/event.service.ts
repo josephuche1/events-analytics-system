@@ -3,7 +3,7 @@ import prisma from "../../config/db";
 interface CreateEventInput{
     userId: string;
     type: string;
-    metadata: Record<string, unknown>;
+    metadata?: Record<string, any>;
 }
 
 export const createEvent = async({
